@@ -1,0 +1,11 @@
+Nombre: {{ contact.name }}
+
+Email: {{ contact.email }}
+
+Teléfono: {{ contact.phone }}
+
+web: {{ contact.get_web_display }}
+
+Duda:
+
+{{ contact.message }}
