@@ -4,6 +4,7 @@ from django.contrib import admin
 from django.conf.urls.static import static
 
 urlpatterns = [
+    url(r'^', include('home.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
 
