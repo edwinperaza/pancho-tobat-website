@@ -469,18 +469,18 @@
 
 <!-- SCRIPTS -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.scrollTo.min.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/jquery.parallax.js"></script>
-<script src="js/jquery.isotope.pkgd.min.js"></script>
-<script src="js/jquery.appear.js"></script>
-<script src="js/jquery.countTo.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.iheight.js"></script>
-<script src="js/jquery.superslides.min.js"></script>
-<script src="js/jquery.owl.carousel.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.scrollTo.min.js' %}"></script>
+<script src="{% static 'js/jquery.nav.js' %}"></script>
+<script src="{% static 'js/jquery.parallax.js' %}"></script>
+<script src="{% static 'js/jquery.isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'js/jquery.appear.js' %}"></script>
+<script src="{% static 'js/jquery.countTo.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'js/jquery.iheight.js' %}"></script>
+<script src="{% static 'js/jquery.superslides.min.js' %}"></script>
+<script src="{% static 'js/jquery.owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 <script>
@@ -503,9 +503,9 @@
 </script>
 <!-- // SCRIPTS -->
 
-<!-- DEMO FEATURES -->
-<link rel="stylesheet" href="demo/demo.css">
-<script src="demo/demo.js"></script>
+<!-- DEMO FEATURES "{% static 'css/red.css' %}"-->
+<link rel="stylesheet" href="{% static 'demo/demo.css' %}">
+<script src="{% static 'demo/demo.js' %}"></script>
 <ul id="color-changer">
 	<li><a href="#" class="red"></a></li>
 	<li><a href="#" class="light-blue"></a></li>
