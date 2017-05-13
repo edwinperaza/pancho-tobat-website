@@ -10,15 +10,14 @@ class ContactForm(ModelForm):
 
     def __init__(self, *args, **kwargs):
         super(ContactForm, self).__init__(*args, **kwargs)
-        self.fields['web'].widget = HiddenInput()
 
     class Meta:
         model = Contact
-        fields = ('name', 'email', 'message', 'web',)
+        fields = ('name', 'email', 'message',)
 
     def save(self, commit=True):
         contact = super(ContactForm, self).save(commit=commit)
-        send_contact_email(contact)
+        # send_contact_email(contact)
         return contact
 
 

@@ -1,5 +1,11 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 
-urlpatterns = patterns('nicolleknust.apps.contacts.views',
-	url(r'^$', 'contact_form_view', name='contact_form_view'),
-)
+from . import views
+
+urlpatterns = [
+    url(
+      r'^$',
+      views.ContactFormView.as_view(),
+      name='contact_form_view'
+    ),
+]

@@ -1,5 +1,28 @@
-<form action="" method="post">
-	{% csrf_token %}
-	{{ form.as_p }}
-	<button></button>
-</form>
+<!-- CONTACT FORM -->
+<div id="contact-form" class="section">
+	<div class="container">
+		<header class="section-header">
+			<h2>Contacto</h2>
+		</header>
+
+		<div id="c-alert-box"></div>
+
+		<form id="c-form" action="{% url 'contact_form_view' %}" name="contactform" method="post">
+			{% csrf_token %}
+			<div class="row contact-form">
+				<div class="form-group col-md-6"><input type="text" name="name" class="form-control" placeholder="Nombre" required></div>
+				<div class="form-group col-md-6"><input type="email" name="email" class="form-control" placeholder="E-mail" required></div>
+				{# <div class="form-group col-md-12"><input type="text" name="subject" class="form-control" placeholder="Asunto"></div> #}
+				<div class="form-group col-md-12"><textarea class="form-control" name="message" rows="6" placeholder="Tu Mensaje ..." required></textarea></div>
+
+				<!-- Submit Button -->
+				<div class="col-md-12 text-center">
+					<input type="submit" value="Enviar" id="submit" class="btn btn-default btn-lg">
+				</div>
+				<!-- // Submit Button -->
+
+			</div>
+		</form>
+	</div>
+</div>
+<!-- // CONTACT FORM -->

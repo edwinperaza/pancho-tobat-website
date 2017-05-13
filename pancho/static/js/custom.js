@@ -1,5 +1,40 @@
 var ie = ie_version();
 
+function getCookie(name) {
+  var cookieValue = null;
+  if (document.cookie && document.cookie !== '') {
+    var cookies = document.cookie.split(';');
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = jQuery.trim(cookies[i]);
+
+      // Does this cookie string begin with the name we want?
+      if (cookie.substring(0, name.length + 1) === (name + '=')) {
+        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+        break;
+      }
+    }
+  }
+
+  return cookieValue;
+}
+
+var csrftoken = getCookie('csrftoken');
+
+function csrfSafeMethod(method) {
+  // these HTTP methods do not require CSRF protection
+  return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+}
+
+$.ajaxSetup({
+    beforeSend: function(xhr, settings) {
+      if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+        xhr.setRequestHeader('X-CSRFToken', csrftoken);
+			}
+
+  	}
+
+});
+
 
 // Parameters
 var p = {
@@ -362,15 +397,17 @@ var all = {
 						loader.show();
 					},
 					success: function(response) {
-						if(response.errors) {
-							$.each(response.errors, function(index, value) {
-								setTimeout(function() {
-									$alert_box.append('<div class="alert alert-danger animated fadeIn">'+value+'</div>');
-								}, index*500);
-							});
-						} else if(response.success) {
-							$alert_box.append('<div class="alert alert-success animated fadeIn">'+response.success+'</div>');
-						}
+						$alert_box.append('<div class="alert alert-success animated fadeIn">' + 'Lo contactaremos lo antes posible' + '</div>');
+						// if(response.errors) {
+						// 	$.each(response.errors, function(index, value) {
+						// 		setTimeout(function() {
+						// 			$alert_box.append('<div class="alert alert-danger animated fadeIn">'+value+'</div>');
+						// 		}, index*500);
+						// 	});
+						// } else if(response.success) {
+						// 	console.log(response);
+						// 	$alert_box.append('<div class="alert alert-success animated fadeIn">'+response.success+'</div>');
+						// }
 					},
 					complete: function() {
 						loader.hide();
