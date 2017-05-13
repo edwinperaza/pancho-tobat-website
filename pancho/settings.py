@@ -28,6 +28,7 @@ INSTALLED_APPS = (
     'django.contrib.flatpages',
 
     'pancho',
+    'home',
     'contacts',
     'services',
 )
