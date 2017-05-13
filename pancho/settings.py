@@ -18,6 +18,7 @@ MANAGERS = ADMINS
 
 
 INSTALLED_APPS = (
+    'suit',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -81,6 +82,16 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
+}
+
+SUIT_CONFIG = {
+    'ADMIN_NAME': 'Pancho Tobar',
+    'MENU_ICONS': {
+        'sites': 'icon-leaf',
+        'auth': 'icon-lock',
+        'contacts': 'icon-book',
+    },
+    'SEARCH_URL': '',
 }
 
 LANGUAGE_CODE = os.getenv('LANGUAGE_CODE', 'es-CL')
