@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ service.name }}{% endblock title %}
+
+{% block content %}
+  <br>
+  <br>
+  <br>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-6 text-center">
+            <img src="{{ service.image.image_detail }}" alt="{{ service.name }}" class="img-responsive thumbnail">
+          </div>
+          <div class="col-md-6 text-center">
+            <h3>{{ service.name }}</h3>
+            <p style="text-align: justify;">
+              {{ service.description|linebreaks }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="headline first-child text-color" style="{% comment %}margin-top: -5px;{% endcomment %}">
+            <span class="border-color">{% trans "Galería" %}</span>
+          </h2>
+          <div class="row">
+            	{% for image in service.images.active %}
+            		<div class="col-md-3 col-xs-12 col-sm-12">
+      	      		<div class="portfolio-item">
+      		          <a href="{{ image.image.url }}" class="fancybox" data-fancybox-group="portfolio">
+      		            <img src="{{ image.image_gallery }}" class="img-responsive thumbnail" title="{{ service.name }}" alt="{{ service.name }}">
+      		          </a>
+      	        	</div>
+              	</div>
+            	{% endfor %}
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+{% endblock content %}

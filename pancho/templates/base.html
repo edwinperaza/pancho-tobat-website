@@ -27,22 +27,23 @@
 <!-- // Loader -->
 
 <!-- NAVBAR -->
-<nav id="header" class="navbar navbar-inverse navbar-static-top" role="navigation">
+<nav id="header" class="navbar navbar-inverse navbar-static-top {% if request.path != '/' %}selected{% endif %}
+" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#">Pancho Tobar</a>
+			<a class="navbar-brand" href="{% url 'home' %}">Pancho Tobar</a>
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="#home">Inicio</a></li>
-				<li><a href="#features">Conóceme</a></li>
-				<li><a href="#portfolio">Charlas y talleres</a></li>
-				<li><a href="#prices">Programa</a></li>
-				<li><a href="#video">Libro</a></li>
-				<li><a href="#video">Testimonios</a></li>
+				<li class="active"><a href="{% url 'home' %}#home">Inicio</a></li>
+				<li><a href="{% url 'home' %}#features">Conóceme</a></li>
+				<li><a href="{% url 'home' %}#portfolio">Charlas y talleres</a></li>
+				<li><a href="{% url 'home' %}#prices">Programa</a></li>
+				<li><a href="{% url 'home' %}#video">Libro</a></li>
+				<li><a href="{% url 'home' %}#video">Testimonios</a></li>
 				<!-- <li><a href="#video">Libro</a></li> -->
-				<li><a href="#contact-form">Contacto</a></li>
+				<li><a href="{% url 'home' %}#contact-form">Contacto</a></li>
 				<!-- <li><a href="#contact-form">Ingresar</a></li> -->
 			</ul>
 		</div>

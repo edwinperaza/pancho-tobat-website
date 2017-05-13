@@ -32,6 +32,8 @@ INSTALLED_APPS = (
     'home',
     'contacts',
     'services',
+
+    'sorl.thumbnail',
 )
 
 MIDDLEWARE_CLASSES = (
