@@ -10,9 +10,9 @@
 		<form id="c-form" action="{% url 'contact_form_view' %}" name="contactform" method="post">
 			{% csrf_token %}
 			<div class="row contact-form">
-				<div class="form-group col-md-6"><input type="text" name="name" class="form-control" placeholder="Nombre" required></div>
+				<div class="form-group col-md-12"><input type="text" name="name" class="form-control" placeholder="Nombre" required></div>
 				<div class="form-group col-md-6"><input type="email" name="email" class="form-control" placeholder="E-mail" required></div>
-				{# <div class="form-group col-md-12"><input type="text" name="subject" class="form-control" placeholder="Asunto"></div> #}
+				<div class="form-group col-md-6"><input type="phone" name="phone" class="form-control" placeholder="Teléfono" required></div>
 				<div class="form-group col-md-12"><textarea class="form-control" name="message" rows="6" placeholder="Tu Mensaje ..." required></textarea></div>
 
 				<!-- Submit Button -->

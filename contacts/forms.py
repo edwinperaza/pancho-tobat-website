@@ -13,7 +13,7 @@ class ContactForm(ModelForm):
 
     class Meta:
         model = Contact
-        fields = ('name', 'email', 'message',)
+        fields = ('name', 'email', 'phone', 'message',)
 
     def save(self, commit=True):
         contact = super(ContactForm, self).save(commit=commit)
