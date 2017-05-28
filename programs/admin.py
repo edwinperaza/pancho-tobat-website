@@ -15,6 +15,12 @@ class ProgramAdmin(admin.ModelAdmin):
     list_filter = ('is_active',)
     inlines = [ImageAdminInline]
 
+    def has_add_permission(self, request):
+        return False
+
+    def has_delete_permission(request, obj=None):
+        return False
+
     class Media:
         js = (
             'js/tiny_mce/tiny_mce.js',
