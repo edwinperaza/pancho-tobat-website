@@ -45,7 +45,7 @@ class Image(BaseModel):
     )
     image = models.ImageField(
         _('image'),
-        upload_to=upload_to('services/images/'),
+        upload_to=upload_to('programs/images/'),
         )
     description = models.TextField(
         _('description'),
