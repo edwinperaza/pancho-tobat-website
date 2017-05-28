@@ -3,6 +3,7 @@ from django.views.generic import TemplateView
 
 from contacts.forms import ContactForm
 from services.models import Service
+from programs.models import Program
 
 
 class HomeView(TemplateView):
@@ -15,4 +16,5 @@ class HomeView(TemplateView):
         context = super(HomeView, self).get_context_data(**kwargs)
         context['form'] = ContactForm
         context['services'] = Service.objects.active()
+        context['programs'] = Program.objects.active()
         return context
