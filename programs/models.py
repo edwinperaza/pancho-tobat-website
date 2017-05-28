@@ -30,7 +30,7 @@ class Program(BaseModel):
 
     def get_absolute_url(self):
         return reverse(
-            'service_detail_view',
+            'program_detail_view',
             kwargs={'slug': slugify(self.name), 'pk': self.pk}
         )
 
