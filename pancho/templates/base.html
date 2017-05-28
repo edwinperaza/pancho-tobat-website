@@ -27,7 +27,7 @@
 <!-- // Loader -->
 
 <!-- NAVBAR -->
-<nav id="header" class="navbar navbar-inverse navbar-static-top {% if request.path != '/' %}selected{% endif %}
+<nav id="header" class="navbar navbar-inverse navbar-static-top {% if request.path == '/' %}lam{% endif %} {% if request.path != '/' %}selected{% endif %}
 " role="navigation">
 	<div class="container">
 		<div class="navbar-header">

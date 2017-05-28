@@ -252,7 +252,7 @@ var all = {
 
 	// Add background to top navigation on scroll
 	navbarSelect: function() {
-		var $navbar = $('#header');
+		var $navbar = $('#header.lam');
 
 		if($(window).scrollTop() > p.navbarScrollTop) {
 			$navbar.addClass('selected');
