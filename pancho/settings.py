@@ -32,8 +32,10 @@ INSTALLED_APPS = (
     'home',
     'contacts',
     'services',
+    'programs',
 
     'sorl.thumbnail',
+    'django_extensions',
 )
 
 MIDDLEWARE_CLASSES = (

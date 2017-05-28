@@ -1,6 +1,16 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+from django.views.generic import ListView, DetailView
+from .models import Program
 
-from django.shortcuts import render
 
-# Create your views here.
+class ProgramListView(ListView):
+    model = Program
+
+    def get_queryset(self):
+        return Program.objects.active()
+
+
+class ProgramDetailView(DetailView):
+    model = Program
+
+    def get_queryset(self):
+        return Program.objects.active()

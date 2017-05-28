@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ program.name }}{% endblock title %}
+
+{% block content %}
+  <br>
+  <br>
+  <br>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-6 text-center">
+            <img src="{{ program.image.image_detail }}" alt="{{ program.name }}" class="img-responsive thumbnail">
+          </div>
+          <div class="col-md-6 text-center">
+            <h3>{{ program.name }}</h3>
+            <p style="text-align: justify;">
+              {{ program.description|linebreaks }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+{% endblock content %}
