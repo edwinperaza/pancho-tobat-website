@@ -36,6 +36,7 @@ INSTALLED_APPS = (
 
     'sorl.thumbnail',
     'django_extensions',
+    'django_summernote',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -116,3 +117,13 @@ EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', '')
 EMAIL_PORT = int(os.getenv('EMAIL_PORT', 587))
 EMAIL_SUBJECT_PREFIX = os.getenv('EMAIL_SUBJECT_PREFIX', '')
 EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS', 'True')
+
+
+SUMMERNOTE_CONFIG = {
+    'toolbar': [
+        ['style', ['style']],
+        ['style', ['bold', 'italic', 'underline', 'clear']],
+        ['para', ['ul', 'ol', 'height']],
+        ['insert', ['link']],
+    ],
+}

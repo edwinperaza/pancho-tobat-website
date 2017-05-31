@@ -1,5 +1,7 @@
 from django.contrib import admin
 
+from django_summernote.admin import SummernoteModelAdmin
+
 from .models import Program, Image
 
 
@@ -10,7 +12,7 @@ class ImageAdminInline(admin.TabularInline):
 
 
 @admin.register(Program)
-class ProgramAdmin(admin.ModelAdmin):
+class ProgramAdmin(SummernoteModelAdmin):
     list_display = ('name', 'order', 'is_active',)
     list_filter = ('is_active',)
     inlines = [ImageAdminInline]

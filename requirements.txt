@@ -8,3 +8,4 @@ sorl-thumbnail==12.4a1
 Pillow==4.1.1
 django-suit==0.2.25
 django-extensions==1.7.9
+django-summernote==0.8.7

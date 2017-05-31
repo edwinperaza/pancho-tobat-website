@@ -8,6 +8,7 @@ urlpatterns = [
     url(r'^services/', include('services.urls')),
     url(r'^programs/', include('programs.urls')),
     url(r'^contact/', include('contacts.urls')),
+    url(r'^summernote/', include('django_summernote.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
 
