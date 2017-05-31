@@ -8242,7 +8242,7 @@ h3 {
         font-size: 28px
     }
     #header {
-        position: relative
+        position: fixed;
     }
     #header .navbar-brand {
         font-size: 27px
