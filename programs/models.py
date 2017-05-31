@@ -76,7 +76,7 @@ class Image(BaseModel):
 
     @property
     def image_detail(self):
-        image = get_thumbnail(self.image, '400x280', crop='center')
+        image = get_thumbnail(self.image, '1080x300', crop='center')
         return image.url
 
     @property
