@@ -1,186 +1,132 @@
-{% extends "base.html" %}
-{% load staticfiles %}
-
-{% block content %}
+{% extends "base.html" %} {% load staticfiles %} {% block content %}
 <!-- HOME -->
 <div id="home" class="home-section home-default dark overlay home-bg2">
-	<div class="home-table">
-		<div class="home-inner">
-			<div class="container">
-				<header>
-					<img src="{% static 'img/pancho_logo.png' %}" alt="" style="width: 14%;">
-					<br>
-					<h1>Pancho Tobar</h1>
-					<div class="home-sub-title">Coaching para adelgazar</div>
-				</header>
-
-				<a href="#contact-form" class="btn btn-default btn-lg scrollTo">Contacto</a>
-			</div>
-		</div>
-	</div>
+    <div class="home-table">
+        <div class="home-inner">
+            <div class="container">
+                <header>
+                    <img src="{% static 'img/pancho_logo.png' %}" alt="" style="width: 14%;">
+                    <br>
+                    <h1>Pancho Tobar</h1>
+                    <div class="home-sub-title">Coaching para adelgazar</div>
+                </header>
+                <a href="#contact-form" class="btn btn-default btn-lg scrollTo">Contacto</a>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- // HOME -->
-
-
 <!-- conoceme -->
 <div id="features" class="section grey">
-	<div class="container">
-		<header class="section-header">
-			<h2>Conóceme</h2>
-			<!-- <div class="section-description">
-				<p>With our services you get many enjoyable conoceme.</p>
-			</div> -->
-		</header>
-		<div class="section-description"><p>Nací por allá en los 70s, 1970 para ser más exacto.
-Autodidacta por naturaleza a pesar que pasé por buenos colegios y universidades (instituto nacional, UMCE, U. de Lichtenstein) pero siempre mi mayor motivación se proyectó hacia estudiar, por mi cuenta y en mis tiempos,  los temas que me interesaban, no tenía mucha paciencia para seguir las mallas curriculares, por lo que buscaba distintas fuentes, con distintas miradas y conclusiones sobre esos temas.
-El deporte ha sido mi vida, modelándola en forma y fondo. Los valores del compañerismo en la cancha, el deleite de estar al aire libre, el luchar contra los límites me ha hecho lo que soy. Participé activamente y a buen nivel en fútbol, rugby, voleibol, basquetbol, balonmano, tenis y snowboard, en estos dos últimos hice cursos en Suiza (J&S) y Austria (A.S.A.) para desarrollarme como profesor. Desde los 17 años impartí clases en gimnasios de Aeróbica, Aerobóx, etc. </p></div>
-		<!-- <div class="row">
-
-			<div class="feature-item col-md-4 col-sm-6">
-				<div class="icon-block"><i class="fa fa-flask"></i></div>
-				<div class="content">
-					<h4>Parallax Images</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorem dignissimos, enim voluptatum praesentium!</p>
-				</div>
-			</div>
-
-			<div class="feature-item col-md-4 col-sm-6">
-				<div class="icon-block"><i class="fa fa-globe"></i></div>
-				<div class="content">
-					<h4>Working forms</h4>
-					<p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore magna aliqua.</p>
-				</div>
-			</div>
-			<div class="feature-item col-md-4 col-sm-6">
-				<div class="icon-block"><i class="fa fa-desktop"></i></div>
-				<div class="content">
-					<h4>Responsive Design</h4>
-					<p>Consectetur adipisicing elit. Quia, a obcaecati. Iste voluptatibus architecto soluta, ipsum.</p>
-				</div>
-			</div>
-			<div class="feature-item col-md-4 col-sm-6">
-				<div class="icon-block"><i class="fa fa-cog"></i></div>
-				<div class="content">
-					<h4>Filtering Portfolio</h4>
-					<p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore magna aliqua.</p>
-				</div>
-			</div>
-			<div class="feature-item col-md-4 col-sm-6">
-				<div class="icon-block"><i class="fa fa-heart"></i></div>
-				<div class="content">
-					<h4>Created with love</h4>
-					<p>Amet aliquam, voluptas rerum sequi quod natus! Corporis excepturi ab quia quis a quibusdam.</p>
-				</div>
-			</div>
-			<div class="feature-item col-md-4 col-sm-6">
-				<div class="icon-block"><i class="fa fa-clock-o"></i></div>
-				<div class="content">
-					<h4>Save your time</h4>
-					<p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore magna aliqua.</p>
-				</div>
-			</div>
-		</div> -->
-	</div>
+    <div class="container">
+        <header class="section-header">
+            <h2>Conóceme</h2>
+            <div class="section-description">
+                <p>Nací por allá en los 70s, 1970 para ser más exacto.</p>
+                <p>Autodidacta por naturaleza a pesar que pasé por buenos colegios y universidades (instituto nacional, UMCE, U. de Lichtenstein) pero siempre mi mayor motivación se proyectó hacia estudiar, por mi cuenta y en mis tiempos, los temas que me interesaban, no tenía mucha paciencia para seguir las mallas curriculares, por lo que buscaba distintas fuentes, con distintas miradas y conclusiones sobre esos temas.</p>
+                <p>El deporte ha sido mi vida, modelándola en forma y fondo. Los valores del compañerismo en la cancha, el deleite de estar al aire libre, el luchar contra los límites me ha hecho lo que soy. Participé activamente y a buen nivel en fútbol, rugby, voleibol, basquetbol, balonmano, tenis y snowboard, en estos dos últimos hice cursos en Suiza (J&S) y Austria (A.S.A.) para desarrollarme como profesor. Desde los 17 años impartí clases en gimnasios de Aeróbica, Aerobóx, etc.</p>
+            </div>
+        </header>
+        <div class="row">
+            <div class="book-watch-more-item col-md-12 col-xs-12">
+                <div class="book-watch-more-block selected">
+                    <h3 class="title">
+						<a href="{% url 'program_redirect_view' 3 %}">
+							Ver más
+						</a>
+					</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- // FEATURES -->
-
-
-
 <!-- FACTS -->
 <div id="facts" class="section dark overlay">
-	<div class="container">
-		<div class="row">
-			<div class="fact-item col-md-3 col-sm-6 col-xs-12">
-				<div class="digits"><span class="counter" data-to="50"></span>+</div>
-				<div class="title">programas</div>
-			</div>
-			<div class="fact-item col-md-3 col-sm-6 col-xs-12">
-				<div class="digits"><span class="counter" data-to="700"></span>+</div>
-				<div class="title">horas</div>
-			</div>
-			<div class="fact-item col-md-3 col-sm-6 col-xs-12">
-				<div class="digits"><span class="counter" data-to="20"></span>+</div>
-				<div class="title">talleres</div>
-			</div>
-			<div class="fact-item col-md-3 col-sm-6 col-xs-12">
-				<div class="digits"><span class="counter" data-to="370"></span>+</div>
-				<div class="title">personas</div>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="fact-item col-md-3 col-sm-6 col-xs-12">
+                <div class="digits"><span class="counter" data-to="50"></span>+</div>
+                <div class="title">programas</div>
+            </div>
+            <div class="fact-item col-md-3 col-sm-6 col-xs-12">
+                <div class="digits"><span class="counter" data-to="700"></span>+</div>
+                <div class="title">horas</div>
+            </div>
+            <div class="fact-item col-md-3 col-sm-6 col-xs-12">
+                <div class="digits"><span class="counter" data-to="20"></span>+</div>
+                <div class="title">talleres</div>
+            </div>
+            <div class="fact-item col-md-3 col-sm-6 col-xs-12">
+                <div class="digits"><span class="counter" data-to="370"></span>+</div>
+                <div class="title">personas</div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- // FACTS -->
-
-
 <!-- PORTFOLIO -->
 <div id="portfolio" class="section">
-	<div class="container">
-		<header class="section-header">
-			<h2>Portfolio</h2>
-			<div class="section-description">Take a look to our portfolio. It is really cool!</div>
-		</header>
-
-		<!-- Filter -->
-		{% comment %}
-		<ul id="portfolio-filter" class="portfolio-filter">
-		<li><a href="#" data-filter-by="*" class="active">All</a></li>
-		<li><a href="#" data-filter-by=".web-design">Web Design</a></li>
-		<li><a href="#" data-filter-by=".development">Development</a></li>
-		<li><a href="#" data-filter-by=".art">Art</a></li>
-	</ul>
-		{% endcomment %}
-		<!-- // Filter -->
-
-		<div id="isotope" class="row">
-
-			<!-- Item -->
-			{% for service in services %}
-			<div class="portfolio-item col-md-4 col-xs-6 web-design development">
-				 <article>
-					 <div class="image-container">
-						 <div class="image">
-							 <a href="{{ service.get_absolute_url }}">
+    <div class="container">
+        <header class="section-header">
+            <h2>Charlas y talleres</h2>
+            <div class="section-description">Detalle de Charlas y Talleres</div>
+        </header>
+        <!-- Filter -->
+        {% comment %}
+        <ul id="portfolio-filter" class="portfolio-filter">
+            <li><a href="#" data-filter-by="*" class="active">All</a></li>
+            <li><a href="#" data-filter-by=".web-design">Web Design</a></li>
+            <li><a href="#" data-filter-by=".development">Development</a></li>
+            <li><a href="#" data-filter-by=".art">Art</a></li>
+        </ul>
+        {% endcomment %}
+        <!-- // Filter -->
+        <div id="isotope" class="row">
+            <!-- Item -->
+            {% for service in services %}
+            <div class="portfolio-item col-md-4 col-xs-6 web-design development">
+                <article>
+                    <div class="image-container">
+                        <div class="image">
+                            <a href="{{ service.get_absolute_url }}">
 								 {% if service.image %}
 								 	<img src="{{ service.image.image_detail }}" alt="">
 								 {% endif %}
 								 <span class="info"><span><i class="fa fa-search"></i></span></span>
 							 </a>
-						 </div>
-					 </div>
-					 <h4>{{ service.name }}</h4>
-				 </article>
-			</div>
-			{% endfor %}
-
-			<!-- // Item -->
-		</div>
-	</div>
+                        </div>
+                    </div>
+                    <h4>{{ service.name }}</h4>
+                </article>
+            </div>
+            {% endfor %}
+            <!-- // Item -->
+        </div>
+    </div>
 </div>
 <!-- // PORTFOLIO -->
-
-
 <!-- PRICES -->
 <div id="prices" class="section dark overlay">
-	<div class="container">
-		<header class="section-header">
-			<h2>Programa</h2>
-			<div class="section-description">
-				<p>Es un programa personalizado de acompañamiento para que logres el cuerpo que mereces tener. También trabajaremos para que tu figura exterior vaya de la mano con una sensación de bienestar interior.</p>
-				<p>El programa es fruto de muchos años de observación teórica y empírica. Está basado en los conocimientos que plasmé en mi libro, “Regálate un Año”, pero esta vez centrado en ti.</p>
-			</div>
-		</header>
-		<div class="row">
-			<div class="price-item col-md-12 col-xs-12">
-				<div class="price-block selected">
-					<h3 class="title">
+    <div class="container">
+        <header class="section-header">
+            <h2>Programa</h2>
+            <div class="section-description">
+                <p>Es un programa personalizado de acompañamiento para que logres el cuerpo que mereces tener. También trabajaremos para que tu figura exterior vaya de la mano con una sensación de bienestar interior.</p>
+                <p>El programa es fruto de muchos años de observación teórica y empírica. Está basado en los conocimientos que plasmé en mi libro, “Regálate un Año”, pero esta vez centrado en ti.</p>
+            </div>
+        </header>
+        <div class="row">
+            <div class="price-item col-md-12 col-xs-12">
+                <div class="price-block selected">
+                    <h3 class="title">
 						<a href="{% url 'program_redirect_view' 1 %}">
 							Ver más
 						</a>
 					</h3>
-				</div>
-			</div>
-
-			<!-- <div class="price-item col-md-4 col-xs-12">
+                </div>
+            </div>
+            <!-- <div class="price-item col-md-4 col-xs-12">
 				<div class="price-block selected">
 					<h3 class="title">
 						<a href="{% url 'program_redirect_view' 2 %}">
@@ -199,45 +145,39 @@ El deporte ha sido mi vida, modelándola en forma y fondo. Los valores del compa
 					</h3>
 				</div>
 			</div> -->
-		</div>
-	</div>
+        </div>
+    </div>
 </div>
 <!-- // PRICES -->
-
-
-
 <!-- VIDEO -->
 <div id="video" class="section grey shape">
-	<div class="container">
-		<header class="section-header">
-			<h2>Regálate un Año</h2>
-			<div class="section-description">
-				<p>Es un libro que fui esbozando durante 20 años por lo que comparte muchísima experiencia, teórica e empírica, sobre lo que considero la mejor forma de bajar de peso, de talla o solo de  mantenerte delgado/a; por supuesto sin dietas.</p>
-				<p>Abordo un abanico de temas que considero importantes para que logres las metas que te propongas; también te insto a ser realista y paciente ya que por un lado existen parámetros genéticos que te modelan y por otro si estás demasiado apurada/o no podrás mantener tus avances en el tiempo y se producirá el ya conocido efecto yo-yo.</p>
-			</div>
-		</header>
-		<div class="row">
-			<div class="book-watch-more-item col-md-12 col-xs-12">
-				<div class="book-watch-more-block selected">
-					<h3 class="title">
-						<a href="{% url 'program_redirect_view' 1 %}">
+    <div class="container">
+        <header class="section-header">
+            <h2>Regálate un Año</h2>
+            <div class="section-description">
+                <p>Es un libro que fui esbozando durante 20 años por lo que comparte muchísima experiencia, teórica e empírica, sobre lo que considero la mejor forma de bajar de peso, de talla o solo de mantenerte delgado/a; por supuesto sin dietas.</p>
+                <p>Abordo un abanico de temas que considero importantes para que logres las metas que te propongas; también te insto a ser realista y paciente ya que por un lado existen parámetros genéticos que te modelan y por otro si estás demasiado apurada/o no podrás mantener tus avances en el tiempo y se producirá el ya conocido efecto yo-yo.</p>
+            </div>
+        </header>
+        <div class="row">
+            <div class="book-watch-more-item col-md-12 col-xs-12">
+                <div class="book-watch-more-block selected">
+                    <h3 class="title">
+						<a href="{% url 'program_redirect_view' 2 %}">
 							Ver más
 						</a>
 					</h3>
-				</div>
-			</div>
-		</div>
-
-		<!-- <div class="row">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row">
 			<div class="col-md-12">
 				<div class="video-container"><iframe src="http://player.vimeo.com/video/87701971?portrait=0&amp;color=ffffff" allowfullscreen=""></iframe></div>
 			</div>
 		</div> -->
-	</div>
+    </div>
 </div>
 <!-- // VIDEO -->
-
-
 <!-- CONTACT FORM -->
 {% include "contacts/ajax/contact_form.html" with form=form %}
 <!-- // CONTACT FORM -->
