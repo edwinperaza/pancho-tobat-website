@@ -120,6 +120,7 @@ EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS', 'True')
 
 
 SUMMERNOTE_CONFIG = {
+    'width': '100%',
     'toolbar': [
         ['style', ['style']],
         ['style', ['bold', 'italic', 'underline', 'clear']],

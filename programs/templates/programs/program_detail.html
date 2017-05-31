@@ -19,7 +19,7 @@
           <!-- <div class="col-md-6 text-center"> -->
             <h3>{{ program.name }}</h3>
             <p style="text-align: justify;">
-              {{ program.description|linebreaks }}
+              {{ program.description|safe }}
               <br>
               <a href="tel:+56944943011">
                 <strong>¡Llamanos!</strong></a>
