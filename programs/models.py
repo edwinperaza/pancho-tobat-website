@@ -18,6 +18,8 @@ class Program(BaseModel):
     objects = ProgramManager()
 
     class Meta:
+        verbose_name = _('section')
+        verbose_name_plural = _('sections')
         ordering = ('order', 'name',)
 
     def __unicode__(self):
