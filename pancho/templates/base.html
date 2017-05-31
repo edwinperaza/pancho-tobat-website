@@ -40,14 +40,12 @@
 			<ul class="nav navbar-nav navbar-right">
 				{% if request.path == '/' %}
 				<li class="active"><a href="{% url 'home' %}">Inicio</a></li>
-				<li><a href="{% url 'home' %}#features">Conóceme</a></li>
-				<li><a href="{% url 'home' %}#portfolio">Charlas y talleres</a></li>
-				<li><a href="{% url 'home' %}#prices">Programa</a></li>
-				<li><a href="{% url 'home' %}#video">Libro</a></li>
-				<li><a href="{% url 'home' %}#video">Testimonios</a></li>
-				<!-- <li><a href="#video">Libro</a></li> -->
-				<li><a href="{% url 'home' %}#contact-form">Contacto</a></li>
-				<!-- <li><a href="#contact-form">Ingresar</a></li> -->
+				<li><a href="http://{{ request.META.HTTP_HOST }}{% url 'home' %}#features" class="navbar_head">Conóceme</a></li>
+				<li><a href="http://{{ request.META.HTTP_HOST }}{% url 'home' %}#portfolio" class="navbar_head">Charlas y talleres</a></li>
+				<li><a href="//{{ request.META.HTTP_HOST }}{% url 'home' %}#prices" class="navbar_head">Programa</a></li>
+				<li><a href="//{{ request.META.HTTP_HOST }}{% url 'home' %}#video" class="navbar_head">Libro</a></li>
+				<li><a href="//{{ request.META.HTTP_HOST }}{% url 'home' %}#video" class="navbar_head">Testimonios</a></li>
+				<li><a href="//{{ request.META.HTTP_HOST }}{% url 'home' %}#contact-form" class="navbar_head">Contacto</a></li>
 				{% endif %}
 			</ul>
 		</div>
