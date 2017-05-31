@@ -38,7 +38,7 @@ $.ajaxSetup({
 
 // Parameters
 var p = {
-	navbarScrollTop: $(window).height() / 4, // When add background to navbar
+	navbarScrollTop: $(window).height() / 12, // When add background to navbar
 	scrollSpeed: 1000, // Smooth scrolling speed
 	scrollOffset: 80, // For one page nav. Recomended to be as navbar height
 	preloaderTimeout: 10000, // If loading is to long, hide overlay after N ms
