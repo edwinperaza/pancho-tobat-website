@@ -73,8 +73,21 @@
     <div class="container">
         <header class="section-header">
             <h2>Charlas y talleres</h2>
-            <div class="section-description">Detalle de Charlas y Talleres</div>
+            <div class="section-description">
+                <p>En la actualidad nuestro mundo lleno de posibilidades y avances gracias a la globalización, las herramientas tecnológicas, cercanía espacial y virtual nos presenta algunos desafíos importantes como el lado B de todo este desarrollo. Nos movemos menos, perdemos tiempo de calidad en trasladarnos, comemos donde y cuando podemos, la vida en familia se hace cada vez más difícil, nos sentimos cansados, tenemos sobrepeso (también a nivel familiar), no nos sentimos agradados con nuestra imagen en el espejo. Todo lo anterior afecta nuestro trabajo así como nuestras relaciones laborales y familiares.</p>
+            </div>
         </header>
+        <div class="row">
+            <div class="book-watch-more-item col-md-12 col-xs-12">
+                <div class="book-watch-more-block selected">
+                    <h3 class="title">
+                        <a href="{% url 'program_redirect_view' 4 %}" class="btn btn-default btn-lg">
+                            Ver más
+                        </a>
+                    </h3>
+                </div>
+            </div>
+        </div>
         <!-- Filter -->
         {% comment %}
         <ul id="portfolio-filter" class="portfolio-filter">
@@ -85,27 +98,27 @@
         </ul>
         {% endcomment %}
         <!-- // Filter -->
-        <div id="isotope" class="row">
+        <!-- <div id="isotope" class="row"> -->
             <!-- Item -->
             {% for service in services %}
-            <div class="portfolio-item col-md-4 col-xs-6 web-design development">
+            <!-- <div class="portfolio-item col-md-4 col-xs-6 web-design development">
                 <article>
                     <div class="image-container">
                         <div class="image">
-                            <a href="{{ service.get_absolute_url }}">
+                            <a href="{{ service.get_absolute_url }}"> -->
 								 {% if service.image %}
-								 	<img src="{{ service.image.image_detail }}" alt="">
+								 	<!-- <img src="{{ service.image.image_detail }}" alt=""> -->
 								 {% endif %}
-								 <span class="info"><span><i class="fa fa-search"></i></span></span>
+								 <!-- <span class="info"><span><i class="fa fa-search"></i></span></span>
 							 </a>
                         </div>
-                    </div>
-                    <h4>{{ service.name }}</h4>
-                </article>
-            </div>
+                    </div> -->
+                  <!--   <h4>{{ service.name }}</h4> -->
+               <!--  </article>
+            </div> -->
             {% endfor %}
             <!-- // Item -->
-        </div>
+        <!-- </div> -->
     </div>
 </div>
 <!-- // PORTFOLIO -->
@@ -141,25 +154,6 @@
                 </div>
             </div>
         </div>
-            <!-- <div class="price-item col-md-4 col-xs-12">
-				<div class="price-block selected">
-					<h3 class="title">
-						<a href="{% url 'program_redirect_view' 2 %}">
-							Avanzado
-						</a>
-					</h3>
-				</div>
-			</div>
-
-			<div class="price-item col-md-4 col-xs-12">
-				<div class="price-block selected">
-					<h3 class="title">
-						<a href="{% url 'program_redirect_view' 3 %}">
-							Pro
-						</a>
-					</h3>
-				</div>
-			</div> -->
         </div>
     </div>
 </div>
