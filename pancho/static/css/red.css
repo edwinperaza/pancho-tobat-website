@@ -625,6 +625,10 @@ a.text-warning:hover {
     word-spacing: -5px;
 }
 
+.right-header-text {
+    margin-left: 70px;
+}
+
 a.text-danger:hover {
     color: #843534
 }
@@ -8251,6 +8255,11 @@ h3 {
     h3 {
         font-size: 28px
     }
+
+    .right-header-text {
+        margin-left: 50px;
+    }
+
     #header {
         position: fixed;
     }
