@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 
 /*!
@@ -583,6 +584,10 @@ cite {
     color: #ea5859
 }
 
+.text-red {
+    color: #e50000;
+}
+
 a.text-primary:hover {
     color: #e42b2c
 }
@@ -613,6 +618,10 @@ a.text-warning:hover {
 
 .text-danger {
     color: #a94442
+}
+
+.shadow-font {
+    font-family: 'Shadows Into Light Two', cursive !important;
 }
 
 a.text-danger:hover {
