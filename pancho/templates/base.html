@@ -18,7 +18,7 @@
 
 <!-- Preloader -->
 <div id="preloader">
-	<div>Pancho Tobar</div>
+	<div class="shadow-font">Pancho Tobar</div>
 </div>
 <!-- // Preloader -->
 <!-- Loader -->
@@ -34,7 +34,7 @@
 		<div class="navbar-header">
 			<a class="navbar-brand shadow-font" href="{% url 'home' %}">
 				<img src="{% static 'img/logo_gray.png' %}" alt="Pancho Tobar" width="50px" style="position: absolute;top: 17px;">
-				<span style="margin-left: 55px;">Pancho Tobar</span>
+				<span style="margin-left: 55px;" class="shadow-font">Pancho Tobar</span>
 			</a>
 			{% if request.path == '/' %}
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
