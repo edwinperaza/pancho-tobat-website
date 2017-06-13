@@ -629,6 +629,10 @@ a.text-warning:hover {
     margin-left: 70px;
 }
 
+.roboto-font {
+    font-family: 'Roboto', sans-serif;
+}
+
 a.text-danger:hover {
     color: #843534
 }
