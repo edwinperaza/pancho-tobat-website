@@ -622,6 +622,7 @@ a.text-warning:hover {
 
 .shadow-font {
     font-family: 'Shadows Into Light Two', cursive !important;
+    word-spacing: -5px;
 }
 
 a.text-danger:hover {
