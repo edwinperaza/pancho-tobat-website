@@ -8252,6 +8252,10 @@ h3 {
     background: #ea5859
 }
 
+.footer-size {
+    font-size: 20px;
+}
+
 @media (max-width:480px) {
     h2 {
         font-size: 40px
