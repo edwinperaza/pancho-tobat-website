@@ -43,7 +43,7 @@
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				{% if request.path == '/' %}
-				<li class="active"><a href="{% url 'home' %}">Inicio</a></li>
+				<li class="active"><a href="{% url 'home' %}#home">Inicio</a></li>
 				<li><a href="http://{{ request.META.HTTP_HOST }}{% url 'home' %}#features" class="navbar_head">Conóceme</a></li>
 				<li><a href="http://{{ request.META.HTTP_HOST }}{% url 'home' %}#portfolio" class="navbar_head">Charlas y talleres</a></li>
 				<li><a href="//{{ request.META.HTTP_HOST }}{% url 'home' %}#prices" class="navbar_head">Programa</a></li>
