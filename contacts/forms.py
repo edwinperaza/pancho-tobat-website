@@ -17,12 +17,12 @@ class ContactForm(ModelForm):
 
     def save(self, commit=True):
         contact = super(ContactForm, self).save(commit=commit)
-        # send_contact_email(contact)
+        send_contact_email(contact)
         return contact
 
 
 def send_contact_email(contact):
-    to_address = settings.CONTACTS_EMAILS
+    to_address = ["panchotobarvalenzuela@gmail.com"]
     from_address = contact.email
     content = render_to_string(
         'contacts/email_contact.txt', {'contact': contact})

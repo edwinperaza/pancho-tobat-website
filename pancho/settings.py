@@ -85,7 +85,7 @@ DATABASES = {
         'USER': os.getenv('DB_USER', 'postgres'),
         'PASSWORD': os.getenv('DB_PASSWORD', 'postgres'),
         'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'PORT': '',
     }
 }
 
@@ -111,9 +111,9 @@ MEDIA_URL = os.getenv('MEDIA_URL', '/media/')
 STATIC_ROOT = os.getenv('STATIC_ROOT', os.path.join(BASE_DIR, 'static'))
 
 EMAIL_BACKEND = os.getenv('EMAIL_BACKEND', 'django.core.mail.backends.smtp.EmailBackend')
-EMAIL_HOST = os.getenv('EMAIL_HOST', 'localhost')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', '')
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', '')
+EMAIL_HOST = os.getenv('EMAIL_HOST', 'smtp-relay.sendinblue.com')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'Wn6E20tbj8kL3MIc')
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'bluemix.junio@importadoramoriahdp.com')
 EMAIL_PORT = int(os.getenv('EMAIL_PORT', 587))
 EMAIL_SUBJECT_PREFIX = os.getenv('EMAIL_SUBJECT_PREFIX', '')
 EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS', 'True')
