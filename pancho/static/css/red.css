@@ -8262,6 +8262,9 @@ h3 {
 .footer-size a:hover {
     color: #ea5859;
 }
+.margin-top-20 {
+    margin-top: 20px;
+}
 
 @media (max-width:480px) {
     h2 {
